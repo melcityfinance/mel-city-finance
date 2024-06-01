@@ -47,7 +47,7 @@ eleventyNavigation:
              Exprienced Melbourne-based brokerage firm
             </p>
             <div class="cs-button-group">
-                <a href="" class="cs-button-solid cs-button1">Read More</a>
+                <a href="/about" class="cs-button-solid cs-button1">Read More</a>
             </div>
         </div>
     </div>
@@ -69,9 +69,6 @@ eleventyNavigation:
         <div class="cs-content">
             <span class="cs-topper">Services</span>
             <h2 class="cs-title">Expert Mortage broker Service In Melbourne</h2>
-            <p class="cs-text">
-            We are primarily a referral-based business, with the majority of our clients coming from repeat customers and referrals. We deeply value our clients and understand the importance they bring to our success. Your satisfaction is our priority, and we are committed to guiding you through the loan and home-buying processes with care and expertise.
-            </p>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
@@ -89,7 +86,7 @@ eleventyNavigation:
                 <p class="cs-item-text">
                     If you're looking to buy your first house, invest in property, or refinance your home loan
                 </p>
-                <a href="" class="cs-link">
+                <a href="/home_loan" class="cs-link">
                     Read More
                     <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
                 </a>
@@ -109,7 +106,7 @@ eleventyNavigation:
                 <p class="cs-item-text">
                     If you are looking to open a new business, expand your company or refiance your business loan
                 </p>
-                <a href="" class="cs-link">
+                <a href="/commercial_loan" class="cs-link">
                     Read More
                     <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
                 </a>
@@ -129,13 +126,39 @@ eleventyNavigation:
                 <p class="cs-item-text">
                     If your encounter an emergency event, would like to make a major purchases or achieve a milestone
                 </p>
-                <a href="" class="cs-link">
+                <a href="/personal_loan" class="cs-link">
                     Read More
                     <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/red-arrow.svg" alt="icon" width="20" height="20" aria-hidden="true">
                 </a>
             </li>
         </ul>
     </div>
-</section>                                                             
+</section>  
+
+<!-- ============================================ -->
+<!--            Side By Side Reverse              -->
+<!-- ============================================ -->
+
+<section id="sbsr-92">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/first_home.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/first_home.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/first_home.jpg" alt="city" width="347" height="604" aria-hidden="true">
+        </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">Why Choose Us</h2>
+            <p class="cs-text">
+            We are predominately a referral business, in fact majority of our business is from repeat clients or referrals from our clients. We know how important our clients are, and fully understand the value that our clients can bring to us. We really do care about our clients. We are here to help guide you through the loan and buying processes. 
+            </p>
+            <a class="cs-button-solid" aria-label="read more about our services" href="">Read More</a>
+        </div>
+    </div>
+</section>
+                                
+                                
     {% include 'components/cta.html' %}
 {% endblock %}
