@@ -2,7 +2,7 @@
 title: "Investing in Melbourne Property: A smart move with Melcity Finance"
 description: 
 author: Eva Chang
-date: 2023-09-15 T15:26:46.705Z
+date: 2023-09-15T15:26:46.705Z
 tags:
     - feature
 image: /assets/images/blog/city.jpg
