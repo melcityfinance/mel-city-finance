@@ -1,6 +1,6 @@
 ---
 title: Did You Know? Shopping Around Can Result In A Decline.
-description: 
+description: Learn how shopping around for multiple loans can impact your credit score and discover strategies to avoid declines. Melcity Finance is the key of your success!
 author: James Sandery
 date: 2024-04-10T15:28:08.486Z
 tags:

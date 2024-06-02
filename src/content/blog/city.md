@@ -1,10 +1,9 @@
 ---
-title: "Investing in Melbourne Property: A smart move with Melcity Finance"
-description: 
-author: Eva Chang
+title: Investing in Melbourne Property market
+description: Discover why Melbourne is a prime property investment destination and what should you consider in property investment.
 date: 2023-09-15T15:26:46.705Z
 tags:
-    - feature
+    - featured
 image: /assets/images/blog/city.jpg
 imageAlt: City
 ---

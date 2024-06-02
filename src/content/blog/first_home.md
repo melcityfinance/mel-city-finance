@@ -1,6 +1,6 @@
 ---
-title: "A Step-by-Step Guide for First Home Buyers: Making Your Dream a Reality with Melcity Finance"
-description: 
+title: A Step-by-Step Guide for First Home Buyers
+description: Navigate the home buying process effortlessly with Melcity Finance, from pre-approval to settlement and beyond.
 author: Penny Williams
 date: 2023-03-20T15:27:34.591Z
 tags:
