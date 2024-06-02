@@ -1,6 +1,7 @@
 ---
 title: Investing in Melbourne Property market
 description: Discover why Melbourne is a prime property investment destination and what should you consider in property investment.
+author: Eva Chang
 date: 2023-09-15T15:26:46.705Z
 tags:
     - featured
