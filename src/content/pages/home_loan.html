@@ -3,6 +3,10 @@ title: 'Home Loan'
 description: 'Meta description for the page'
 
 permalink: 'home_loan/'
+eleventyNavigation:
+    key: Home Loan
+    parent: Services
+    order: 1000
 ---
 
 {% extends "layouts/base.html" %}
@@ -127,7 +131,7 @@ permalink: 'home_loan/'
     </div>
 </section>
                                 
-                                
+{% include 'components/cta.html' %}                               
 
                                 
 {% endblock %}
