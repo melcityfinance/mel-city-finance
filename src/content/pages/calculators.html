@@ -1,0 +1,90 @@
+---
+title: '    Calculators'
+description: 'provide a range of calculators for home loan '
+preloadImg: '/assets/images/imagename.format'
+permalink: 'calculators/'
+eleventyNavigation:
+    key: Calculators
+    order: 1500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/calculators.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-468">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Best-In-Class</span>
+            <h2 class="cs-title">Our Calculators</h2>
+            <p class="cs-text">
+                
+Managing your finances is not easy. When comes to decision making, there are some many issues need to consider and lots of questions need to ask. We provide numbers of different calculators for you, and help you to have a better understanding about your situation. 
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/ball.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/borrow-power">
+                    <h3 class="cs-h3">Borrow Power <br>Calculator</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/align.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/extra-repayment">
+                    <h3 class="cs-h3">Extra Repayment <br>Calculator</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/aquarius.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/offset-calculator">
+                    <h3 class="cs-h3">Home Loan <br>Offset Calcualtor</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/add.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/interest-only">
+                    <h3 class="cs-h3">Interest Only <br>Loan Calculator</h3>
+                </a>
+            </li>
+
+        </ul>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/center.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/loan-repayment/">
+                    <h3 class="cs-h3">Loan Repayment <br>Calculator</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/cup.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/stamp-duty">
+                    <h3 class="cs-h3">Stamp Duty <br> Calcualtor</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/star.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/rent-buy">
+                    <h3 class="cs-h3">Rent vs Buy<br> Calculator</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/airdrop.svg" loading="lazy" decoding="async" alt="icon" width="90" height="90">
+                <a href="/calculators/repayment-schedule">
+                    <h3 class="cs-h3">Repayment Schedule<br> Comparisor</h3>
+                </a>
+            </li>
+
+        </ul>
+
+
+                                
+        {% include 'components/cta.html' %}                            
+{% endblock %}

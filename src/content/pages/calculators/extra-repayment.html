@@ -1,0 +1,48 @@
+---
+title: 'Extra Repayment Calculator'
+description: 'Top 10 Melbourne mortgage broker extra repayment calculator to estimate fortnight or monthly payment'
+preloadImg: '/assets/images/imagename.format'
+permalink: 'calculators/extra-repayment/'
+eleventyNavigation:
+    key: Extra Repayment Calculator
+    parent: Calculators
+    order: 800
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/calc_style.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Extra Repayment Calculator</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                Calculators                   -->
+<!-- ============================================ -->
+                                
+<section id="services-3099">
+    <div class="cs-container">
+        <iframe class="VisiCalcClass" id="Loan_Repayment_Calculator" src=" https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Loan_Repayment_Calculator/BlueGrey" frameborder="0" scrolling="no"></iframe>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+{% endblock %}

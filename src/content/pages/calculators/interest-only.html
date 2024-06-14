@@ -1,0 +1,48 @@
+---
+title: 'Interest Only Loan Calculator'
+description: 'Top 10 Melbourne mortgage broker calculate how much you need to pay for interest only loan'
+preloadImg: '/assets/images/imagename.format'
+permalink: 'calculators/interest-only/'
+eleventyNavigation:
+    key: Interest Only Loan Calculator
+    parent: Calculators
+    order: 1400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/calc_style.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Interest Only Loan Calculator</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                Calculators                   -->
+<!-- ============================================ -->
+                                
+<section id="services-3099">
+    <div class="cs-container">
+        <iframe class="VisiCalcClass" id="Interest_Only_Mortgage_Calculator" src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Interest_Only_Mortgage_Calculator/BlueGrey" frameborder="0" scrolling="no"></iframe>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+{% endblock %}
