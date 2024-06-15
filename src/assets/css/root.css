@@ -269,8 +269,7 @@
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
   body.cs-open {
-    overflow: hidden
-            ;
+    overflow: hidden;
   }
   #cs-navigation {
     width: 100%;
@@ -279,7 +278,7 @@
     padding: 0.75rem 1rem;
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: fixed;
+    position: sticky;
     z-index: 10000;
   }
   #cs-navigation:before {
