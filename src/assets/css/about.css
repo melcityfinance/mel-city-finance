@@ -302,7 +302,49 @@
 /*-- ============================================ -->
 <!--                   Slidingshow 1              -->
 <!-- ============================================ -*/
-@media (min-width: 768px) {
+@media only screen and (min-width: 0rem) {
+  #test {
+    padding: var(--sectionPadding);
+  }
+  #test .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #test .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #test .cs-topper {
+    text-align: left;
+    margin-bottom: 0.25rem;
+  }
+  #test .cs-title {
+    text-align: left;
+    max-width: 50rem;
+    padding-bottom: 80px;
+  }
+  #test .cs-text {
+    text-align: left;
+    max-width: 46.875rem;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+  #test .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
   #test {
     padding: var(--sectionPadding);
   }
