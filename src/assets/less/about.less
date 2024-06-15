@@ -362,7 +362,7 @@
 /*-- ============================================ -->
 <!--                   Slidingshow 1              -->
 <!-- ============================================ -*/
-@media only screen and (min-width: 0rem){
+@media (min-width: 768px) {
     #test{
         padding: var(--sectionPadding);
     }
@@ -407,313 +407,77 @@
                 margin-bottom: (32/16rem);
             }
         }
-    
-    #test {
-        .carousel {
-            position: relative;
-        }
-        .container-fluid {
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-    * {
-        box-sizing: border-box;
-    }
 
-    div {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
         display: block;
-        unicode-bidi: isolate;
     }
-    @color_1: -webkit-link;
-    @color_2: #fff;
-    @background_color_1: #fff;
-    @border_color_1: #ddd;
-
-    a {
-        &:-webkit-any-link {
-            color: @color_1;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-    }
-    #test {
-        .ml-auto { margin-left: auto !important;
-    }
-    } 
     
-        .mx-auto {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-        .carousel-item-next {
-            display: block;
-        }
-        .row {
-            &: after { display: table;
-            content: "";
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        }
-        .carousel-inner {
-            >.carousel-item { position: relative;
-            display: none;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            width: 100%;
-            transition: -webkit-transform .6s ease;
-            transition: transform .6s ease;
-            transition: transform .6s ease, -webkit-transform .6s ease;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            -webkit-perspective: 1000px;
-            perspective: 1000px;
-        }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
     }
-    .mr-auto {
-        margin-right: auto !important;
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
     }
-    .w-100 {
-        width: 100% !important;
-    }
-    .carousel-inner {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        >.active { left: 0px;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        >.active {
-            left: 0;}
-        }
-    }
-    .carousel-item-prev {
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
         display: block;
+        visibility: visible;
     }
-    .carousel-item.active {
-        display: block;
-    }
-    .container-fluid {
-        &: after { display: table;
-        content: "";
-        &::after {
-            clear: both;
-        }
-    }
-    & {
-        &:before {
-            display: table;
-            content: "";
-            display: table;
-            content: "";
-        }
-    }
-    .carousel-item {
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: relative;
-        display: none;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        width: 100%;
-        transition: -webkit-transform .6s ease;
-        transition: transform .6s ease;
-        transition: transform .6s ease, -webkit-transform .6s ease;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-perspective: 1000px;
-        perspective: 1000px;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
     }
-    .col-md-3 {
-        position: relative;
-        width: 100%;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .panel-default {
-        border-color: @border_color_1;
-    }
-    .panel {
-        margin-bottom: 20px;
-        background-color: @background_color_1;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-    }
-    .d-block {
-        display: block !important;
-    }
-    .img-fluid {
-        max-width: 100%;
-        height: auto;
-    }
-    img {
-        border: 0;
-    }
-    .carousel-control-prev {
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
         left: 0;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 15%;
-        color: @color_2;
-        text-align: center;
-        opacity: .5;
+        z-index: -1;
+        display: block;
+        visibility: visible;
     }
-    .row {
-        &::after {
-            clear: both;
-        }
-    }
-    .carousel-control-next {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 15%;
-        color: @color_2;
-        text-align: center;
-        opacity: .5;
-        right: 0;
-    }
-    [role=button] {
-        cursor: pointer;
-    }
-    .carousel-control-prev-icon {
-        background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E);
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: transparent no-repeat center center;
-        background-size: 100% 100%;
-    }
-    .carousel-control-next-icon {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: transparent no-repeat center center;
-        background-size: 100% 100%;
-        background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: transparent no-repeat center center;
-        background-size: 100% 100%;
-    }
-    .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        -webkit-clip-path: inset(50%);
-        clip-path: inset(50%);
-        border: 0;
-
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
     }
 
-        /* show 3 items */
-        .carousel-inner .active,
-        .carousel-inner .active + .carousel-item,
-        .carousel-inner .active + .carousel-item + .carousel-item,
-        .carousel-inner .active + .carousel-item + .carousel-item,
-        .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
-            display: block;
-        }
-    
-        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
-        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-            transition: none;
-        }
-    
-        .carousel-inner .carousel-item-next,
-        .carousel-inner .carousel-item-prev {
-            position: relative;
-            transform: translate3d(0, 0, 0);
-        }
-    
-        .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-            position: absolute;
-            top: 0;
-            right: -25%;
-            z-index: -1;
-            display: block;
-            visibility: visible;
-        }
-    
-        /* left or forward direction */
-        .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-        .carousel-item-next.carousel-item-left + .carousel-item,
-        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
-        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-            position: relative;
-            transform: translate3d(-100%, 0, 0);
-            visibility: visible;
-        }
-        
-        /* farthest right hidden item must be abso position for animations */
-        .carousel-inner .carousel-item-prev.carousel-item-right {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            display: block;
-            visibility: visible;
-        }
-    
-        /* right or prev direction */
-        .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-        .carousel-item-prev.carousel-item-right + .carousel-item,
-        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
-        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-            position: relative;
-            transform: translate3d(100%, 0, 0);
-            visibility: visible;
-            display: block;
-            visibility: visible;
-        }
-    }
+}
 
  /* Bootstrap Lightbox using Modal */
 
 #profile-grid { overflow: auto; white-space: normal; } 
-#profile-grid .profile { 
-    padding-bottom: 40px; }
+#profile-grid .profile { padding-bottom: 40px; }
 #profile-grid .panel { padding: 0 }
 #profile-grid .panel-body { padding: 15px }
 #profile-grid .profile-name { font-weight: bold; }
