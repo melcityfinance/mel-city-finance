@@ -1,47 +1,55 @@
-#terms {
-  padding: var(--sectionPadding);
+@media only screen and (min-width: 0rem) {
+  #terms {
+    padding: var(--sectionPadding);
+  }
+  #terms body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  #terms .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #terms h1,
+  #terms h2 {
+    color: #333;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+  }
+  #terms a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  #terms a:hover {
+    text-decoration: underline;
+  }
+  #terms p {
+    margin: 10px 0;
+  }
+  #terms ol {
+    padding: 20px;
+  }
+  #terms ul {
+    padding: 20px;
+  }
+  #terms ol li {
+    padding: 5px;
+    margin-left: 35px;
+  }
+  #terms ul li {
+    margin: 5px;
+  }
 }
-#terms body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-#terms .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-#terms h1,
-#terms h2 {
-  color: #333;
-  border-bottom: 2px solid #555;
-  padding-bottom: 10px;
-}
-#terms a {
-  color: #007bff;
-  text-decoration: none;
-}
-#terms a:hover {
-  text-decoration: underline;
-}
-#terms p {
-  margin: 10px 0;
-}
-#terms ol {
-  padding: 20px;
-}
-#terms ul {
-  padding: 20px;
-}
-#terms ol li {
-  padding: 5px;
-  margin-left: 35px;
-}
-#terms ul li {
-  margin: 5px;
+@media only screen and (max-width: 600px) {
+  /* 200px - 300px - leaving extra space for the navigation */
+  padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
+  /* prevents the topper line from causing an overflow */
+  overflow: hidden;
 }

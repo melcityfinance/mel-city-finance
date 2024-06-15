@@ -1,59 +1,67 @@
-#terms{
-    @primary-color: #333;
-    @secondary-color: #555;
-    @background-color: #f8f8f8;
-    @link-color: #007bff;
-    padding: var(--sectionPadding);
-    body {
-        font-family: Arial, sans-serif;
-        background-color: @background-color;
-        color: @primary-color;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-    }
+@media only screen and (min-width: 0rem) {
+    #terms{
+        @primary-color: #333;
+        @secondary-color: #555;
+        @background-color: #f8f8f8;
+        @link-color: #007bff;
+        padding:var(--sectionPadding);
+        body {
+            font-family: Arial, sans-serif;
+            background-color: @background-color;
+            color: @primary-color;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    h1, h2 {
-        color: @primary-color;
-        border-bottom: 2px solid @secondary-color;
-        padding-bottom: 10px;
-    }
+        h1, h2 {
+            color: @primary-color;
+            border-bottom: 2px solid @secondary-color;
+            padding-bottom: 10px;
+        }
 
-    a {
-        color: @link-color;
-        text-decoration: none;
+        a {
+            color: @link-color;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ol {
+            padding: 20px;
+        }
         
-        &:hover {
-            text-decoration: underline;
+        ul {
+            padding: 20px;
+        }
+        
+        ol li {
+            padding: 5px;
+            margin-left: 35px;
+        }
+        
+        ul li {
+            margin: 5px;
         }
     }
-
-    p {
-        margin: 10px 0;
-    }
-
-    ol {
-        padding: 20px;
-    }
-    
-    ul {
-        padding: 20px;
-    }
-    
-    ol li {
-        padding: 5px;
-        margin-left: 35px;
-    }
-    
-    ul li {
-        margin: 5px;
-    }
+}
+@media only screen and (max-width: 600px) {
+            /* 200px - 300px - leaving extra space for the navigation */
+            padding: clamp(12.5rem, 25.95vw, 18.75em) (16/16rem);
+            /* prevents the topper line from causing an overflow */
+            overflow: hidden;
 }
