@@ -23,7 +23,7 @@
     gap: 3rem;
   }
   #hero-1785 .cs-content {
-    margin: 130px;
+    /*margin: 130px;*/
     text-align: center;
     width: 100%;
     max-width: 46.875rem;
@@ -38,7 +38,7 @@
   }
   #hero-1785 .cs-text {
     margin-bottom: 2rem;
-    padding-left: 80px;
+    /*padding-left: 80px;*/
   }
   #hero-1785 .cs-button-group {
     display: flex;
@@ -133,6 +133,9 @@
   #hero-1785 {
     /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get clsoer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
     padding-bottom: 14vw;
+  }
+  #hero-1785 .cs-text {
+    padding-left: 80px;
   }
 }
 /*-- -------------------------- -->
