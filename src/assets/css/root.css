@@ -1032,7 +1032,7 @@
   }
   #cs-footer-1761 .cs-title {
     /* 31px - 39px */
-    font-size: clamp(1.9375rem, 7vw, 3.0625rem);
+    font-size: clamp(3rem, 7vw, 3.0625rem);
     max-width: 23ch;
     margin: 0.5rem 0.5 rem;
   }
