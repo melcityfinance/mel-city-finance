@@ -86,6 +86,33 @@
             color: #000;
             cursor: pointer;
         }
+        .custom-select {
+            /* ... */
+            position: relative;
+            width: 100%
+          }
+        .custom-select::before,
+        .custom-select::after {
+              --size: 0.3rem;
+              position: absolute;
+              content: "";
+              right: 1rem;
+              pointer-events: none;
+            }
+            
+        .custom-select::before {
+              border-left: var(--size) solid transparent;
+              border-right: var(--size) solid transparent;
+              border-bottom: var(--size) solid black;
+              top: 40%;
+            }
+            
+        .custom-select::after {
+              border-left: var(--size) solid transparent;
+              border-right: var(--size) solid transparent;
+              border-top: var(--size) solid black;
+              top: 55%;
+            }
         
         .cs-textarea {
             font-family: inherit;
