@@ -1,0 +1,35 @@
+{# …this partial assumes `page` and `client` are available… #}
+
+{% if page.canonical %}
+<link rel="canonical" href="{{ page.canonical }}">
+{% endif %}
+<meta name="description" content="{{ page.description | default(client.description) }}">
+<meta name="keywords"
+      content="mortgage broker Melbourne, home loan Melbourne, commercial loan Victoria, personal loan Australia">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "{{ client.name }}",
+  "url": "{{ client.domain }}/",
+  "logo": "{{ client.domain }}/assets/images/logo.png",
+  "telephone": "{{ client.phoneForTel }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ client.address.lineOne }}",
+    "addressLocality": "{{ client.address.city }}",
+    "addressRegion": "{{ client.address.state }}",
+    "postalCode": "{{ client.address.zip }}",
+    "addressCountry": "AU"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+    ],
+    "opens": "09:00",
+    "closes": "20:00"
+  }]
+}
+</script>

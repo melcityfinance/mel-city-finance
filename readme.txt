@@ -1,1 +1,1 @@
-this is netlify version of project
+this is netlify version of project. domain is deployed via this repo.
