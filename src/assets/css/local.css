@@ -499,12 +499,12 @@
     color: #555555;
 }
 
-@media only screen and (min-width: 48rem) {
-    .v2-trust {
-        padding: 4rem 2rem;
+@media only screen and (min-width: 64rem) {
+    #services-1081 .cs-card-group {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .v2-trust-points {
-        grid-template-columns: repeat(3, 1fr);
+    #services-1081 .cs-item {
+        grid-column: auto;
     }
 }
