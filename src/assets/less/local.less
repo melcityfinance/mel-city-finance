@@ -673,6 +673,91 @@
     }
 }
 
+/* =========================================
+   Website V2 - Final CTA
+   ========================================= */
+
+.v2-final-cta {
+    padding: 4rem 1.5rem;
+    background: #1a1a1a;
+}
+
+.v2-final-cta-container {
+    width: 100%;
+    max-width: 52rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.v2-final-cta h2 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.v2-final-cta p {
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #dddddd;
+}
+
+.v2-final-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.v2-final-cta-primary,
+.v2-final-cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10rem;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.v2-final-cta-primary {
+    background: #f5b800;
+    border: 2px solid #f5b800;
+    color: #1a1a1a;
+}
+
+.v2-final-cta-primary:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+.v2-final-cta-secondary {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.v2-final-cta-secondary:hover {
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+@media only screen and (min-width: 36rem) {
+    .v2-final-cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 48rem) {
+    .v2-final-cta {
+        padding: 5rem 2rem;
+    }
+}
+
 
                         
 
