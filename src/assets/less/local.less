@@ -1201,6 +1201,172 @@
     }
 }
 
+/* =========================================
+   About Eva
+   ========================================= */
+
+.v2-about-intro {
+    padding: 4rem 1.5rem;
+    background: #ffffff;
+}
+
+.v2-about-container {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.v2-about-photo {
+    width: 100%;
+    min-height: 24rem;
+    background: #f3f3f3;
+}
+
+.v2-about-copy h2 {
+    max-width: 34rem;
+    margin: 0.75rem 0 1.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+
+.v2-about-copy p {
+    max-width: 38rem;
+    margin: 0 0 1.25rem;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #555555;
+}
+
+
+/* How I Work */
+
+.v2-about-work {
+    padding: 4rem 1.5rem;
+    background: #f7f7f7;
+}
+
+.v2-about-content {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.v2-about-heading {
+    max-width: 46rem;
+    margin-bottom: 2.5rem;
+}
+
+.v2-about-heading h2 {
+    margin: 0.75rem 0 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+
+.v2-about-work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.v2-about-work-grid article {
+    padding: 2rem;
+    background: #ffffff;
+    border-top: 3px solid #f5b800;
+}
+
+.v2-about-work-grid h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.v2-about-work-grid p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555555;
+}
+
+
+/* Who I Work With */
+
+.v2-about-clients {
+    padding: 4rem 1.5rem;
+    background: #ffffff;
+}
+
+.v2-about-clients h2 {
+    max-width: 42rem;
+    margin: 0.75rem 0 1rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+
+.v2-about-clients-intro {
+    margin: 0 0 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555555;
+}
+
+.v2-about-client-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 58rem;
+    border-top: 1px solid #dddddd;
+}
+
+.v2-about-client-list div {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #dddddd;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.v2-about-language {
+    margin: 2rem 0 0;
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 48rem) {
+
+    .v2-about-intro,
+    .v2-about-work,
+    .v2-about-clients {
+        padding: 5rem 2rem;
+    }
+
+    .v2-about-container {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 4.5rem;
+    }
+
+    .v2-about-photo {
+        min-height: 32rem;
+    }
+
+    .v2-about-work-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .v2-about-client-list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
                         
 
                                 
