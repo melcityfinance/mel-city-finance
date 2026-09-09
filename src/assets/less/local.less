@@ -1181,6 +1181,26 @@
     }
 }
 
+/* How It Works - centre final two process cards */
+
+@media only screen and (min-width: 64rem) {
+    .v2-hiw-steps {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .v2-hiw-steps article {
+        grid-column: span 2;
+    }
+
+    .v2-hiw-steps article:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .v2-hiw-steps article:nth-child(5) {
+        grid-column: 4 / span 2;
+    }
+}
+
                         
 
                                 
