@@ -1391,6 +1391,31 @@
     line-height: 1.12;
 }
 
+/* About Eva - photo responsive sizing */
+
+.v2-about-photo {
+    width: 100%;
+    overflow: hidden;
+}
+
+.v2-about-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+@media only screen and (max-width: 47.99rem) {
+    .v2-about-photo {
+        min-height: 0;
+        aspect-ratio: 4 / 5;
+    }
+
+    .v2-about-photo img {
+        height: 100%;
+    }
+}
                         
 
                                 
