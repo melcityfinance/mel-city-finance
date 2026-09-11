@@ -19,7 +19,9 @@
 
    .VisiCalcClass {
     display: block;
-    min-width: 640px;
+    width: 640px !important;
+    min-width: 640px !important;
+    max-width: 640px !important;
     min-height: 800px;
     margin: 0 auto;
     padding: 0;
@@ -29,8 +31,11 @@
 }
     
     #Loan_Repayment_Calculator { min-height:750px !important; } 
-    #Borrowing_Power_Calculator {
-    min-height: 750px !important;
+   #Borrowing_Power_Calculator {
+    width: 640px !important;
+    min-width: 640px !important;
+    max-width: 640px !important;
+    height: 800px !important;
 }
     #Budget_Planner { min-height:2850px !important; }
     #Compound_Interest_Calculator { min-height:850px !important; } 
