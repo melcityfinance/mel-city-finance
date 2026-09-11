@@ -31,9 +31,7 @@
     
     #Loan_Repayment_Calculator { min-height:750px !important; } 
     #Borrowing_Power_Calculator {
-    width: 700px !important;
-    max-width: 100% !important;
-    min-height: 850px !important;
+    min-height: 750px !important;
 }
     #Budget_Planner { min-height:2850px !important; }
     #Compound_Interest_Calculator { min-height:850px !important; } 
