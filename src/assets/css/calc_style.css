@@ -171,12 +171,12 @@
 
 .v2-borrowing-layout {
     display: grid;
-    grid-template-columns: 640px minmax(280px, 1fr);
-    gap: 64px;
+    grid-template-columns: 640px minmax(320px, 420px);
+    gap: 48px;
     align-items: start;
-    margin-top: 40px;
+    margin: 40px auto 0;
+    max-width: 1108px;
 }
-
 .v2-borrowing-info {
     padding-top: 20px;
 }
