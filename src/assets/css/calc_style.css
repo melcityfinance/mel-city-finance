@@ -19,11 +19,10 @@
 
    .VisiCalcClass {
     display: block;
-    width: 100%;
-    max-width: 900px;
-    min-width: 0;
+    min-width: 640px;
     min-height: 800px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
     border: 0;
     background: url(/assets/svgs/eater.gif) 50% 15% no-repeat;
     background-size: 80px 80px;
