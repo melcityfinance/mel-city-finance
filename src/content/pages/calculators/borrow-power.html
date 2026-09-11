@@ -1,57 +1,93 @@
 ---
-title: 'Borrow Power Calculator'
-description: 'Top 10 Melbourne mortgage broker borrow power calculator to estimate how much you can borrow'
-preloadImg: '/assets/images/imagename.format'
+title: 'Borrowing Power Calculator'
+description: 'Estimate how much you may be able to borrow with our borrowing power calculator.'
 permalink: 'calculators/borrow-power/'
-eleventyNavigation:
-    key: Borrow Power Calculator
-    parent: Calculators
-    order: 700
 ---
 
 {% extends "layouts/base.html" %}
 
-{% block head %}
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYERHB9SK7"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-  
-          gtag('config', 'G-TYERHB9SK7');
-    </script>
-    <link rel="stylesheet" href="/assets/css/calc_style.css">
-{% endblock %}
-
 {% block body %}
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
 
-<div id="banner-712">
-    <div class="cs-container">
-        <span class="cs-int-title">Borrow Power Calculator</span>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
-    </picture>
-</div>
+<!-- ============================================
+     Borrowing Power Calculator - Hero
+============================================= -->
 
-<!-- ============================================ -->
-<!--                Calculators                   -->
-<!-- ============================================ -->
-                                
-<section id="services-3099">
-    <div class="cs-container">
-        <iframe class="VisiCalcClass" id="Borrowing_Power_Calculator" src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Borrowing_Power_Calculator/BlueGrey" frameborder="0" scrolling="no"></iframe>
+<section class="v2-page-hero">
+    <div class="v2-page-hero-container">
+        <span class="v2-page-eyebrow">CALCULATOR</span>
+
+        <h1>Borrowing Power Calculator</h1>
+
+        <p>
+            Get an initial estimate of how much you may be able to borrow
+            based on the information you provide.
+        </p>
     </div>
 </section>
 
-{% include 'components/cta.html' %}
+
+<!-- ============================================
+     MFAA Borrowing Power Calculator
+============================================= -->
+
+<section class="v2-resources-section">
+    <div class="v2-resources-container">
+
+        <div class="v2-resources-heading">
+            <span class="v2-page-eyebrow">BORROWING POWER</span>
+            <h2>Estimate your borrowing position</h2>
+            <p>
+                Enter your income, expenses and loan details below to get
+                an initial borrowing estimate.
+            </p>
+        </div>
+
+        <div class="v2-calculator-wrapper">
+            <iframe
+                class="VisiCalcClass"
+                id="Borrowing_Power_Calculator"
+                src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Borrowing_Power_Calculator/BlueGrey"
+                title="Borrowing Power Calculator"
+                frameborder="0"
+                scrolling="no">
+            </iframe>
+        </div>
+
+        <p class="v2-resources-disclaimer">
+            Calculator results are estimates only and are provided as a general guide.
+            Actual borrowing capacity and lending options will depend on your
+            circumstances and the lender's assessment criteria.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ============================================
+     Final CTA
+============================================= -->
+
+<section class="v2-final-cta">
+    <div class="v2-final-cta-container">
+
+        <h2>Want to understand your actual borrowing position?</h2>
+
+        <p>
+            A calculator is a useful starting point, but your borrowing capacity
+            will depend on your individual circumstances and lender policy.
+        </p>
+
+        <p>
+            Tell me what you're looking to do, and I can help you understand
+            what may be achievable.
+        </p>
+
+        <div class="v2-final-cta-actions">
+            <a href="/contact/" class="v2-final-cta-primary">Get in Touch</a>
+            <a href="/contact/" class="v2-final-cta-secondary">Book a Call</a>
+        </div>
+
+    </div>
+</section>
+
 {% endblock %}
