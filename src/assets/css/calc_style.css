@@ -263,7 +263,8 @@
     height: 750px !important;
     min-height: 750px !important;
     transform: none !important;
-    zoom: 2 !important;
+    zoom: 1.6 !important;
+  margin-left: -30px !important;
 }
 
 /* Borrowing Power Calculator - Mobile size */
