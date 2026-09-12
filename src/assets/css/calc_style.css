@@ -8,28 +8,32 @@
       padding: var(--sectionPadding);
       background-color: #f7f7f7;
     }
-    #services-3099 .cs-container {
-      width: 100%;
-      /* changes to 1280px at tablet */
-      max-width: 34.375rem;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
-    }
+   #services-3099 .cs-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .VisiCalcClass {
-        background:url(/assets/svgs/eater.gif) 50% 15% no-repeat;
-        background-size: 80px 80px;
-        min-width: 640px;
-        min-height:800px;
-        margin:auto;
-    }
+  .VisiCalcClass {
+    display: block;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 900px !important;
+    min-height: 800px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: url(/assets/svgs/eater.gif) 50% 15% no-repeat;
+    background-size: 80px 80px;
+}
     
     #Loan_Repayment_Calculator { min-height:750px !important; } 
-    #Borrowing_Power_Calculator { min-height:750px !important; }
+#Borrowing_Power_Calculator {
+    min-height: 750px !important;
+}
     #Budget_Planner { min-height:2850px !important; }
     #Compound_Interest_Calculator { min-height:850px !important; } 
     #Credit_Card_Calculator { min-height:900px !important; }
@@ -155,6 +159,86 @@
             rgba(0, 0, 0, 0.9) 16.86%,
             rgba(0, 0, 0, 0) 100%
         );
+    }
+}
+
+/* ========================================
+   Borrowing Power - Two Column Layout
+======================================== */
+
+.v2-borrowing-layout {
+    display: block;
+    margin-top: 40px;
+}
+
+.v2-calculator-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.v2-borrowing-info {
+    max-width: 640px;
+    margin: 40px auto 0;
+    padding-top: 0;
+}
+
+.v2-borrowing-info h3 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin: 10px 0 20px;
+}
+
+.v2-borrowing-info p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.v2-borrowing-info ul {
+    margin: 0 0 24px;
+    padding-left: 22px;
+}
+
+.v2-borrowing-info li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.v2-borrowing-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 14px 22px;
+    background: #f4b400;
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.v2-borrowing-button:hover {
+    opacity: 0.88;
+}
+
+.v2-resources-disclaimer {
+    margin-top: 32px;
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+    .v2-borrowing-layout {
+        display: block;
+        margin-top: 28px;
+    }
+
+    .v2-calculator-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .v2-borrowing-info {
+        margin-top: 32px;
     }
 }
 

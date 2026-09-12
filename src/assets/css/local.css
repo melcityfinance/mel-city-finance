@@ -426,3 +426,85 @@
     order: 2;
   }
 }
+
+/* ============================================
+   WEBSITE V2 - TRUST & SOCIAL PROOF
+   ============================================ */
+
+.v2-trust {
+    padding: 3rem 1rem;
+    background: #ffffff;
+}
+
+.v2-trust .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.v2-trust-points {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.v2-trust-item {
+    padding: 1.25rem;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 0.5rem;
+}
+
+.v2-trust-item strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.v2-trust-item span {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555555;
+}
+
+.v2-review {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 0.5rem;
+}
+
+.v2-stars {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+    color: #f5b800;
+}
+
+.v2-review blockquote {
+    margin: 0 0 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.v2-review p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #555555;
+}
+
+@media only screen and (min-width: 64rem) {
+    #services-1081 .cs-card-group {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #services-1081 .cs-item {
+        grid-column: auto;
+    }
+}
