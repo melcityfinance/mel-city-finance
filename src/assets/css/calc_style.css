@@ -242,5 +242,29 @@
     }
 }
 
+/* Borrowing Power Calculator - V2 size fix */
+#services-3099 {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+#services-3099 > .cs-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Borrowing_Power_Calculator {
+    width: 640px !important;
+    min-width: 640px !important;
+    max-width: 640px !important;
+    height: 750px !important;
+    min-height: 750px !important;
+    transform: none !important;
+    zoom: 1 !important;
+}
+
                                 
       
