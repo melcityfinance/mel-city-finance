@@ -293,5 +293,29 @@
     }
 }
 
+/* Loan Repayment Calculator - Desktop */
+#Loan_Repayment_Calculator {
+    width: 640px !important;
+    min-width: 640px !important;
+    max-width: 640px !important;
+    height: 500px !important;
+    min-height: 500px !important;
+    transform: none !important;
+    zoom: 1.6 !important;
+    margin-left: -30px !important;
+}
+
+/* Loan Repayment Calculator - Mobile */
+@media only screen and (max-width: 700px) {
+    #Loan_Repayment_Calculator {
+        width: 640px !important;
+        min-width: 640px !important;
+        max-width: 640px !important;
+        height: 600px !important;
+        min-height: 600px !important;
+        zoom: 0.55 !important;
+        margin-left: 0 !important;
+    }
+}
                                 
       
