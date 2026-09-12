@@ -21,12 +21,14 @@
     }
 
     .VisiCalcClass {
-        background:url(/assets/svgs/eater.gif) 50% 15% no-repeat;
-        background-size: 80px 80px;
-        min-width: 640px;
-        min-height:800px;
-        margin:auto;
-    }
+    background:url(/assets/svgs/eater.gif) 50% 15% no-repeat;
+    background-size: 80px 80px;
+    width: 100%;
+    min-width: 640px;
+    min-height: 800px;
+    margin: auto;
+    border: 0;
+}
     
     #Loan_Repayment_Calculator { min-height:750px !important; } 
     #Borrowing_Power_Calculator { min-height:750px !important; }
