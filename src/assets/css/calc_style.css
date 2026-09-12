@@ -59,7 +59,7 @@
           margin:0;
           padding:var(--sectionPadding);}
   
-                  #Loan_Repayment_Calculator { min-height:1250px !important; }
+               
                   #Borrowing_Power_Calculator { min-height:1800px !important; }
                   #Budget_Planner { min-height:5000px !important; }
                   #Comparison_Rate_Calculator { min-height:1450px !important; }
