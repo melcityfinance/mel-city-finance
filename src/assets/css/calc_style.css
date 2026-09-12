@@ -17,11 +17,11 @@
     align-items: center;
 }
 
-   .VisiCalcClass {
+  .VisiCalcClass {
     display: block;
-    width: 640px !important;
-    min-width: 640px !important;
-    max-width: 640px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 900px !important;
     min-height: 800px;
     margin: 0 auto;
     padding: 0;
