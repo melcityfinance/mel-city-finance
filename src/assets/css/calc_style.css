@@ -268,6 +268,7 @@
 
 /* Borrowing Power Calculator - Mobile size */
 @media only screen and (max-width: 700px) {
+
     #services-3099 {
         padding: 10px 12px;
     }
@@ -275,15 +276,17 @@
     #services-3099 > .cs-container {
         width: 100%;
         max-width: 100%;
-        overflow: hidden;
+        overflow: visible;
     }
 
     #Borrowing_Power_Calculator {
         width: 640px !important;
         min-width: 640px !important;
         max-width: 640px !important;
-        height: 750px !important;
-        min-height: 750px !important;
+
+        height: 900px !important;
+        min-height: 900px !important;
+
         zoom: 0.55 !important;
     }
 }
