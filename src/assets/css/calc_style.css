@@ -285,8 +285,8 @@
         min-width: 640px !important;
         max-width: 640px !important;
 
-        height: 900px !important;
-        min-height: 900px !important;
+        height: 700px !important;
+        min-height: 700px !important;
 
         zoom: 0.60 !important;
       margin-left: 0 !important;
@@ -311,8 +311,8 @@
         width: 640px !important;
         min-width: 640px !important;
         max-width: 640px !important;
-        height: 603px !important;
-        min-height: 603px !important;
+        height: 550px !important;
+        min-height: 550px !important;
         zoom: 0.60 !important;
         margin-left: 0 !important;
     }
