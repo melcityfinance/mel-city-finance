@@ -508,3 +508,10 @@
         grid-column: auto;
     }
 }
+
+/* Footer legal links spacing */
+.v2-footer-legal-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
