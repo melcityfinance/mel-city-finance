@@ -167,10 +167,9 @@
 /* Desktop Hero layout fix */
 @media only screen and (min-width: 768px) {
     #hero-1785 {
-        background: #111827;
-    }
-
-    #hero-1785 .cs-container {
+    background: #111827 !important;
+}
+       #hero-1785 .cs-container {
         width: 100%;
         max-width: 1280px;
         min-height: 620px;
@@ -178,8 +177,8 @@
         padding: 80px 32px;
         box-sizing: border-box;
 
-        display: grid;
-        grid-template-columns: 1fr 0.9fr;
+       display: grid !important;
+grid-template-columns: 1fr 0.9fr !important;
         align-items: center;
         gap: 64px;
     }
