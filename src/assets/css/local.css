@@ -3,7 +3,6 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
 /* =========================================
    Homepage Hero - V2
    ========================================= */
@@ -164,6 +163,47 @@
         margin: 0 auto;
     }
 }  
+
+/* Desktop Hero layout fix */
+@media only screen and (min-width: 768px) {
+    #hero-1785 {
+        background: #111827;
+    }
+
+    #hero-1785 .cs-container {
+        width: 100%;
+        max-width: 1280px;
+        min-height: 620px;
+        margin: 0 auto;
+        padding: 80px 32px;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 1fr 0.9fr;
+        align-items: center;
+        gap: 64px;
+    }
+
+    #hero-1785 .cs-content {
+        width: 100%;
+        max-width: 650px;
+        text-align: left;
+    }
+
+    #hero-1785 .v2-hero-portrait {
+        width: 100%;
+        max-width: 520px;
+        justify-self: end;
+        margin: 0;
+    }
+
+    #hero-1785 .v2-hero-portrait img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+}
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
