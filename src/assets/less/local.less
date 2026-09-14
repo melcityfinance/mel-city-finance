@@ -655,26 +655,28 @@
 .v2-services-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0;
+    border-top: 1px solid #dddddd;
 }
 
 .v2-service-card {
     display: flex;
     flex-direction: column;
     min-width: 0;
-    padding: 2rem;
-    background: #ffffff;
-    border-top: 3px solid #f5b800;
+    padding: 2rem 0;
+    background: transparent;
+    border-bottom: 1px solid #dddddd;
 }
 
 .v2-service-card h3 {
-    margin: 0 0 1rem;
-    font-size: 1.2rem;
+    margin: 0 0 0.75rem;
+    font-size: 1.35rem;
     line-height: 1.3;
     color: #1a1a1a;
 }
 
 .v2-service-card p {
+    max-width: 30rem;
     margin: 0 0 1.5rem;
     font-size: 0.95rem;
     line-height: 1.65;
@@ -683,7 +685,7 @@
 
 .v2-service-card a {
     margin-top: auto;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #c58f00;
     text-decoration: none;
@@ -699,13 +701,21 @@
     }
 
     .v2-services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-}
 
-@media only screen and (min-width: 64rem) {
-    .v2-services-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+    .v2-service-card {
+        padding: 2.25rem 2rem;
+    }
+
+    .v2-service-card:nth-child(odd) {
+        padding-left: 0;
+        border-right: 1px solid #dddddd;
+    }
+
+    .v2-service-card:nth-child(even) {
+        padding-right: 0;
+        padding-left: 2.5rem;
     }
 }
 
