@@ -157,11 +157,16 @@
         padding: 14px 18px;
     }
 
-    #hero-1785 .v2-hero-portrait {
-        width: 100%;
-        max-width: 480px;
-        margin: 0 auto;
-    }
+  #hero-1785 .v2-hero-portrait {
+    width: 100%;
+    max-width: 380px;
+    margin: -20px auto -40px;
+}
+   #hero-1785 .v2-hero-portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 }  
 
 
