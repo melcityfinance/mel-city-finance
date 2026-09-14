@@ -1,161 +1,186 @@
 /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
-/*-- -------------------------- -->
-<---           Hero             -->
-<--- -------------------------- -*/
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
+/* =========================================
+   Homepage Hero - V2
+   ========================================= */
+
+#hero-1785 {
+    background: #111827;
+    overflow: hidden;
+
+    .cs-container {
+        width: 100%;
+        max-width: 1280px;
+        min-height: 620px;
+        margin: 0 auto;
+        padding: 80px 32px;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 1fr 0.9fr;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .cs-content {
+        width: 100%;
+        max-width: 650px;
+        text-align: left;
+    }
+
+    .cs-topper {
+        display: block;
+        margin-bottom: 18px;
+
+        font-size: 13px;
+        line-height: 1.4;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+
+        color: #f4b400;
+    }
+
+    .cs-title {
+        margin: 0 0 24px;
+
+        font-size: clamp(48px, 5vw, 76px);
+        line-height: 1.05;
+        font-weight: 700;
+
+        color: #ffffff;
+    }
+
+    .cs-text {
+        max-width: 580px;
+        margin: 0 0 32px;
+
+        font-size: 18px;
+        line-height: 1.7;
+
+        color: #d1d5db;
+    }
+
+    .cs-button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .cs-button-solid {
+        min-width: 160px;
+        padding: 16px 24px;
+        box-sizing: border-box;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-decoration: none;
+
+        border-radius: 4px;
+        transition: 0.2s ease;
+    }
+
+    .cs-button1 {
+        background: #f4b400;
+        color: #111827;
+        border: 1px solid #f4b400;
+
+        &:hover {
+            background: #ffffff;
+            border-color: #ffffff;
+        }
+    }
+
+    .cs-button2 {
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #6b7280;
+
+        &:hover {
+            border-color: #ffffff;
+        }
+    }
+
+    .v2-hero-portrait {
+        width: 100%;
+        max-width: 520px;
+        margin: 0;
+        justify-self: end;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+    }
+}
+
+
+/* =========================================
+   Homepage Hero - Mobile
+   ========================================= */
+
+@media only screen and (max-width: 767px) {
+
     #hero-1785 {
-        /* 200px - 300px - leaving extra space for the navigation */
-        padding: clamp(12.5rem, 25.95vw, 18.75em) (16/16rem);
-        /* prevents the topper line from causing an overflow */
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
 
         .cs-container {
-            width: 100%;
-            max-width: (1280/16rem);
-            margin: auto;
+            min-height: auto;
+            padding: 56px 20px 48px;
+
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: (48/16rem);
+            flex-direction: column;
+            gap: 36px;
         }
 
         .cs-content {
-            /*margin: 130px;*/
+            max-width: 100%;
             text-align: center;
-            width: 100%;
-            max-width: (750/16rem);
+        }
+
+        .cs-topper {
+            margin-bottom: 14px;
+            font-size: 12px;
         }
 
         .cs-title {
-            /* 49px - 84px */
-            font-size: clamp(3.0625rem, 6vw, 5.25rem);
+            margin-bottom: 20px;
+
+            font-size: clamp(40px, 12vw, 54px);
+            line-height: 1.05;
         }
 
-        .cs-title,
-        .cs-text {color: var(--bodyTextColorWhite);
-    }
-
         .cs-text {
-            margin-bottom: (32/16rem);
-            /*padding-left: 80px;*/
+            margin: 0 auto 28px;
+
+            font-size: 16px;
+            line-height: 1.6;
         }
 
         .cs-button-group {
-            display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: (8/16rem);
+            gap: 10px;
         }
 
         .cs-button-solid {
-            font-size: (16/16rem);
-            font-weight: 700;
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-align: center;
-            text-decoration: none;
-            min-width: (200/16rem);
-            margin: 0;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-            padding: 0 (24/16rem);
-            background-color: var(--primary);
-            color: var(--bodyTextColorWhite);
-            border-radius: (4/16rem);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-
-            &:before {
-                content: "";
-                width: 0%;
-                height: 100%;
-                background: #000;
-                opacity: 1;
-                border-radius: (4/16rem);
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
-            }
+            min-width: 0;
+            padding: 14px 18px;
         }
 
-        .cs-graphic {
+        .v2-hero-portrait {
             width: 100%;
-            min-width: (1920/16rem);
-            height: auto;
-            object-fit: cover;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            z-index: 0;
-            transform: translateX(-50%);
-        }
-
-        .cs-graphic-dark {
-            display: none;
-        }
-
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -2;
-
-            &:before {
-                /* Overlay */
-                content: "";
-                width: 100%;
-                height: 100%;
-                background:#4b4b4b;
-                /* prevents the cursor from interacting with it */
-                pointer-events: none;
-                opacity: 0.7;
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
+            max-width: 480px;
+            margin: 0 auto;
         }
     }
 }
 
-/* Large Desktop - 1920px */
-@media only screen and (min-width: 120rem) {
-    #hero-1785 {
-        /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get clsoer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
-        .cs-text {
-            padding-left: 80px;
-        }
-        padding-bottom: 14vw;
-    }
-}
-                                
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
