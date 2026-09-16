@@ -283,3 +283,7 @@
 body {
     background: red !important;
 }
+.v2-contact-wechat img {
+    width: 140px;
+    height: 140px;
+}
