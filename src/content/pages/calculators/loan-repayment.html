@@ -1,57 +1,79 @@
 ---
-title: 'Loan repayment Calculator'
-description: 'Top 10 Melbourne mortgage broker loan repayment calculator calculates how much repayment you need to pay and total interest'
-preloadImg: '/assets/images/imagename.format'
+title: 'Loan Repayment Calculator'
+description: 'Estimate your loan repayments and total interest based on the loan amount, interest rate and loan term.'
 permalink: 'calculators/loan-repayment/'
-eleventyNavigation:
-    key: Loan Repayment Calculator
-    parent: Calculators
-    order: 1600
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYERHB9SK7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-  
-        gtag('config', 'G-TYERHB9SK7');
-    </script>
-    <link rel="stylesheet" href="/assets/css/calc_style.css">
+<link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/calc_style.css" />
 {% endblock %}
 
 {% block body %}
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
 
-<div id="banner-712">
-    <div class="cs-container">
-        <span class="cs-int-title">Loan Repayment Calculator</span>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
-    </picture>
-</div>
+<!-- ============================================
+     Loan Repayment Calculator - Hero
+============================================= -->
 
-<!-- ============================================ -->
-<!--                Calculators                   -->
-<!-- ============================================ -->
-                                
-<section id="services-3099">
-    <div class="cs-container">
-        <iframe class="VisiCalcClass" id="Loan_Repayment_Calculator" src=" https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Loan_Repayment_Calculator/BlueGrey" frameborder="0" scrolling="no"></iframe>
+<section class="v2-page-hero">
+    <div class="v2-page-hero-container">
+        <span class="v2-page-eyebrow">CALCULATOR</span>
+
+        <h1>Loan Repayment Calculator</h1>
+
+        <p>
+            Estimate your loan repayments and total interest
+            based on the loan amount, interest rate and loan term.
+        </p>
     </div>
 </section>
 
-{% include 'components/cta.html' %}
+
+<!-- ============================================
+     MFAA Loan Repayment Calculator
+============================================= -->
+
+<section id="services-3099">
+    <div class="cs-container">
+        <iframe
+            class="VisiCalcClass"
+            id="Loan_Repayment_Calculator"
+            src="https://www.visionabacus.net/Tools/B3/SuiteA/Z200/MFAA/Loan_Repayment_Calculator/BlueGrey"
+            frameborder="0"
+            scrolling="no">
+        </iframe>
+    </div>
+</section>
+
+
+<!-- ============================================
+     Final CTA
+============================================= -->
+
+<section class="v2-final-cta">
+    <div class="v2-final-cta-container">
+
+        <h2>Want to understand what your repayments may look like?</h2>
+
+        <p>
+            A repayment calculator can give you a useful estimate, but your actual
+            repayments will depend on your loan structure, interest rate and lender.
+        </p>
+
+        <p>
+            If you're comparing loan options, I can help you understand the numbers
+            and how different structures may affect your repayments.
+        </p>
+
+        <div class="v2-final-cta-actions">
+            <a href="/contact/" class="v2-final-cta-primary">Get in Touch</a>
+            <a href="/contact/" class="v2-final-cta-secondary">Book a Call</a>
+        </div>
+
+    </div>
+</section>
+
 {% endblock %}

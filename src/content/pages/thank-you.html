@@ -1,0 +1,67 @@
+---
+title: "Thank You | Mel City Finance"
+description: "Thank you for contacting Mel City Finance."
+permalink: '/thank-you/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/local.css" />
+{% endblock %}
+
+{% block body %}
+
+<section style="
+    min-height: 65vh;
+    padding: 140px 24px 100px;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+">
+
+    <div style="
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+    ">
+
+        <span style="
+            display: block;
+            margin-bottom: 14px;
+            color: #d9a900;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .12em;
+        ">
+            MESSAGE RECEIVED
+        </span>
+
+        <h1 style="
+            margin: 0 0 20px;
+            font-size: clamp(38px, 5vw, 56px);
+            line-height: 1.1;
+        ">
+            Thanks for getting in touch.
+        </h1>
+
+        <p style="
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 17px;
+            line-height: 1.7;
+        ">
+            Your message has been received. I'll get back to you as soon as I can.
+        </p>
+
+        <a href="/" class="cs-button-solid">
+            Back to Home
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}
